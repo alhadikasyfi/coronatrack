@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets_Pages/styles/style.css">
+    <title>Corona Viruses</title>
+</head>
+<body>
+    <div class="survey-container">   <!--note:Survey result akan menampilkan icon sesuai keadaanmu-->
+        <div class="survey-content">
+            <div class="close">
+                +
+            </div>
+            <div style="margin-bottom:-15px ;"><h2>Survey Kesehatan</h2></div>
+            <div style="width: 150px; height: 2px; background: #6ab04c; margin: 0px auto; margin-bottom: 15px;"></div>
+            <div id="data-survey" style="display: block; text-align: left;">
+                <div style="margin-left: 16%;">
+                <div><span style="margin-right: 5.7%;">Nama Lengkap</span> : <input id="name" type="text" required></div>
+                <div><span style="margin-right: 23.7%;">Umur </span> : <input id="umur" type="text" required></div>
+                <div><span>Pekerjaan Saat Ini</span> : <input id="pekerjaan" type="text" required></div></div>
+                <div style="text-align: center;">
+                
+             <div><label for="batuk"> Apakah kamu batuk kering?
+                <input type="radio" id="iya-batuk" name="batuk" required> iya
+                <input type="radio" id="tidak-batuk" name="batuk" required> tidak </label></div>
+             <div><label for="sesaknapas"> Apakah kamu sesak napas?
+                <input type="radio" id="iya-sesak" name="sesaknapas" required> iya
+                <input type="radio" id="tidak-sesak" name="sesaknapas" required> tidak </label></div>
+             <div><label for="panastinggi"> Apakah kamu Panas tinggi?
+                <input type="radio" id="iya-panas" name="panastinggi" required> iya
+                <input type="radio" id="tidak-panas" name="panastinggi" required> tidak </label></div>  
+             <div class="container-submit">
+                <button onclick="submitFunction()" class="submit-button" type="submit">
+                    SUBMIT
+                </button></div>
+             </div>
+            </div>
+        </div>        
+    </div>
+    
+    <nav class="navigation-bar">
+        <div id="logo">
+            <img width="50px" src="Assets_Pages/Images/shield-virus-solid2.svg" alt="logo">
+            <h1>CORONA<span style="color: orange;">SHIELD</span></h1>            
+        </div>
+        
+        <input type="checkbox" id="check"><span id="check-button">Menu</span>
+        
+        
+        <ul class="navigation-content">
+            <li><a href="Assets_Pages/Beranda.html" style="color: orange;" >BERANDA</a></li>
+            <li><a href="Assets_Pages/VirusCorona.html" >VIRUS CORONA</a></li>
+            <li><a href="Assets_Pages/GejalaPenyakit.html" >GEJALA PENYAKIT</a></li>
+            <li><a href="Assets_Pages/Pencegahan.html" >PENCEGAHAN</a></li>
+            <li><a href="Assets_Pages/PetaPersebaran.html" >PETA PERSEBARAN</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="banner-surveybutton">
+            <div class="banner-img" >
+                <img src="Assets_Pages/Images/wallpaper.png" width="100%" max-height="800px">
+            </div>
+        </div>
+        <div class="result-container">  <!--note:Survey result akan menampilkan icon sesuai keadaanmu-->
+            <div class="banner-title-button">
+                <p style="text-align: center;"><a href="#" id="button" class="button" >Yuk Ikuti Survey kami</a></p>
+            </div>
+            <h1>SURVEY RESULT</h1>
+            <p id="survey-result" style="text-align: center;"></p>
+            <div style="display: flex; justify-content: center; align-items: center; font-weight: bolder;">
+                <div style="flex-basis: auto; margin: 20px; text-align: center;">
+                    <img id="mask" style="width: 100px; height:100px;" src="Assets_Pages/Images/head-side-mask-solid.svg">
+                    <figcaption id="maskcap" >Wear a Mask</figcaption>                
+                </div>
+                <div style="flex-basis: auto; margin: 20px 30px 20px 30px; text-align: center;">
+                    <img id="stayhome" style="width: 100px; height:100px;" src="Assets_Pages/Images/house-user-solid.svg">
+                    <figcaption id="stayhomecap" >Just Stay at Home</figcaption>                
+                </div>
+                <div style="flex-basis: auto; margin: 20px; text-align: center; ">
+                    <img id="handwash" style="width: 100px; height:100px;" src="Assets_Pages/Images/hands-wash-solid.svg">
+                    <figcaption id="handwashcap" >Wash Your Hand</figcaption>                
+                </div>               
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content">
+            <div class="feature-content" >
+              <h1>FITUR</h1>
+              <div class="green-line"></div>
+    
+              <content class="feature-content-a">
+                <div class="feature-content-b">
+                  <div class="feature-content-c">
+                    <img style="width: 100px; height: 100px;" src="Assets_Pages/Images/viruses-solid.svg" alt="">
+                    <div class="feature-content-title" >Virus Corona</div>
+                    <p>Info-info tentang Virus Corona (COVID-19). Seperti cara penularan, bentuk fisik, dan lainnya.</p>
+                    <a href="Assets_Pages/VirusCorona.html" style="text-decoration: none;"><p class="button featured-button">Lihat konten</p></a>
+                  </div>
+                </div>
+
+                <div class="feature-content-b">
+                  <div class="feature-content-c">
+                    <img style="width: 100px; height: 100px; " src="Assets_Pages/Images/head-side-cough-solid.svg" alt="">
+                    <div class="feature-content-title" >Gejala Penyakit</div>
+                    <p style="margin-bottom: 34px;">Gejala-gejala tiap fase dari orang yang terkena penyakit COVID-19.</p>
+                    <a href="Assets_Pages/GejalaPenyakit.html" style="text-decoration: none;"><p class="button featured-button">Lihat konten</p></a>
+                  </div>
+                </div>
+
+                <div class="feature-content-b">
+                  <div class="feature-content-c">
+                    <img style="width: 100px; height: 100px;" src="Assets_Pages/Images/people-arrows-solid.svg" alt="">
+                    <div class="feature-content-title" >Pencegahan</div>
+                    <p>Kiat-kiat dalam mencegah penularan atau perkembangbiakan dari Virus Corona</p>
+                    <a href="Assets_Pages/Pencegahan.html" style="text-decoration: none;"><p class="button featured-button">Lihat konten</p></a>
+                  </div>
+                </div>
+
+                <div class="feature-content-b">
+                    <div class="feature-content-c">
+                      <img style="width: 100px; height: 100px;" src="Assets_Pages/Images/plane-slash-solid.svg" alt="">
+                      <div class="feature-content-title" >Peta Persebaran</div>
+                      <p style="margin-bottom: 18px;">Peta persebaran COVID-19 yang berada di Indonesia</p><br>
+                      <a href="Assets_Pages/PetaPersebaran.html" style="text-decoration: none;"><p class="button featured-button">Lihat konten</p></a>
+                    </div>
+                  </div>
+                </content>
+            </div>
+        </div>
+
+    </main>
+    <aside class="aside-content">
+        <div class="aside-logo" >
+            <img width="50px" src="Assets_Pages/Images/shield-virus-solid2.svg" alt="logo">
+            <h1>CORONA<span style="color: orange;">SHIELD</span></h1>            
+        </div>
+        <div class="aside-data">
+            <div style="flex-basis: 180%;">
+                <h3>Data Diri</h3>
+                <p>Alhadi Kasyfi</p>
+                <p>Mahasiswa S1 On-Going</p>
+            </div>
+            <div style="flex-basis: 100%; color: #838383; ">
+                <div style="display: flex; margin: -7px 0px -7px 0px;">
+                    <img class="icon" width="20px" src="Assets_Pages/Images/google-plus-brands.svg" alt="">
+                    <p style="margin-left: 4px;">alhadikasyfi1431@gmail.com</p>
+                </div>
+                <div style="display: flex; margin: -7px 0px -7px 0px;">
+                    <img class="icon" width="20px" src="Assets_Pages/Images/facebook-square-brands.svg" alt="">
+                    <p style="margin-left: 4px;">Alhadi Kasyfi</p>
+                </div>
+                <div style="display: flex; margin: -7px 0px -7px 0px;">
+                    <img class="icon" width="20px" src="Assets_Pages/Images/twitter-brands.svg" alt="">
+                    <p style="margin-left: 4px;">Alhadi Kasyfi</p>
+                </div>
+                <div style="display: flex; margin: -7px 0px -7px 0px;">
+                    <img class="icon" width="20px" src="Assets_Pages/Images/instagram-brands.svg" alt="">
+                    <p style="margin-left: 4px;">alhadi_kasyfi</p>
+                </div>            
+            </div>     
+        </div>
+    </aside>
+    <footer>
+        <p>CopyRight &#169; 2020, Alhadi Kasyfi for Submission</p>
+    </footer>
+    <script src="Assets_Pages/script/script.js"></script>
+    
+</body>
+</html>
+
+
+catatan pertemuan wisma tgl 15juni 2020
+hobi bang yusuf membaca
+hobi bang raihan membaca juga
+hobi haykal itu ngoding, dan ngotak-ngatik barang elektronik
+hikam makan dan futsal
+fathan koding, dan lari
+fuad makan dan masak dan nulis
+
+pembinaan wisma:
+1. diniyyah: ushul tsalatsah, syarh arbain nawawi(ust aris),
+2. bahasa arab, al mumti'
+3. hafalan quran 2halaman ziyadah perpekan
+4. 3 hadist perpekan
+
+atta'aruf
+tashrif lughowi,, taarufan, taarufaini, taarufaatin
+
